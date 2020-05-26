@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="../assets/logo.png" />
     <div>
-    	<button @click='test'>test vuex</button>
+      <button @click="test">test vuex</button>
     </div>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -13,17 +13,17 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
     // HelloWorld
   },
-  data(){
-  	return {}
+  data() {
+    return {};
   },
-  methods:{
-  	test(){
-  		this.$router.push({name:'testvuex'})
-  	}
+  methods: {
+    test() {
+      this.$router.push({ name: "testvuex" });
+    }
   }
-}
+};
 </script>
