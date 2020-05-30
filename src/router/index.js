@@ -16,11 +16,6 @@ let router = new Router({
       name: "about",
       component: () => import(/* webpackChunkName: "about" */ "../views/About.vue")
     }
-    // {
-    //   path: "/testvuex",
-    //   name: "testvuex",
-    //   component: () => import(/* webpackChunkName: "about" */ "../views/test-vuex.vue")
-    // }
   ]
 });
 
