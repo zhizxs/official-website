@@ -1,18 +1,35 @@
 <template>
   <div id="app">
-    <Navbar />
-    <router-view></router-view>
-    <Bottom />
+    <vue-drawer-layout ref="drawer" :z-index="0" :content-drawable="true" :backdrop-opacity-range="[0, 0.4]" @mask-click="handleMaskClick">
+      <div class="drawer-content" slot="drawer">
+        <mult-list></mult-list>
+      </div>
+      <div slot="content">
+        <Navbar @changeMenu="changeMenu" />
+        <router-view></router-view>
+        <Bottom />
+      </div>
+    </vue-drawer-layout>
   </div>
 </template>
 <script>
 import Bottom from "./views/Bottom";
 import Navbar from "./views/Navbar";
+import multList from "@components/multList";
 export default {
   name: "navbar",
   components: {
     Navbar,
-    Bottom
+    Bottom,
+    multList
+  },
+  methods: {
+    handleMaskClick() {
+      this.$refs.drawer.toggle(false);
+    },
+    changeMenu() {
+      this.$refs.drawer.toggle(true);
+    }
   }
 };
 </script>

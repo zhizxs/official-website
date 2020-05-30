@@ -3,9 +3,7 @@
     <div class="main">
       <!-- 大屏 -->
       <div class="big hidden">
-        <div class="logo">
-          <img src="@img/logo.png" alt="" />
-        </div>
+        <img class="logo" src="@img/logo.png" alt="" />
         <div class="content">
           <div class="item" v-for="(item, index) in menu" :key="index + item.id" @mouseenter="makeHover(item.id)" @mouseleave="mouseleave">
             <a @click="chooseMenu(item.id)">{{ item.title }}</a>
@@ -21,36 +19,17 @@
       </div>
       <!-- 小屏 -->
       <div class="sm show">
-        <div class="left">
+        <div class="left" @click="changeMenu">
           <img src="@img/menu.png" alt="" />
         </div>
         <div class="center">
-          <div class="logo">
-            <img src="@img/logo.png" alt="" />
-          </div>
+          <img class="logo" src="@img/logo.png" alt="" />
         </div>
         <div class="right">
           <img class="search" src="@img/search.png" alt="" />
         </div>
       </div>
     </div>
-    <!-- 下啦 -->
-    <ul class="sm-list">
-      <!-- <li>
-        <img class="arrow arrow-left" src="@img/arrow01.png" alt="" />
-        <span>返回</span>
-      </li> -->
-      <li>
-        <img class="pos" src="@img/position.png" alt="" />
-        <span>挑选门店</span>
-      </li>
-      <li v-for="(items, index) in currentMenu" :key="index + items.id">
-        <span @click="changeItem(index)">{{ items.title }}</span>
-        <span v-if="items.child || items.type">
-          <img class="arrow" src="@img/arrow01.png" alt="" />
-        </span>
-      </li>
-    </ul>
     <!-- 搜索 -->
     <div class="search-cont sm-search" v-show="showSearch">
       <input type="text" placeholder="请输入你需要搜索的产品" />
@@ -84,6 +63,9 @@ export default {
     },
     mouseleave() {
       this.mouseId = "";
+    },
+    changeMenu() {
+      this.$emit("changeMenu");
     }
   }
 };
@@ -114,6 +96,10 @@ export default {
   .left img {
     width: 27px;
     height: 27px;
+  }
+  .logo {
+    width: 2em;
+    height: 2em;
   }
 }
 
@@ -177,10 +163,7 @@ export default {
     overflow: hidden;
     box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.1);
   }
-}
-
-.logo {
-  img {
+  .logo {
     width: 4em;
     height: 4em;
   }
@@ -224,44 +207,8 @@ input {
   }
 }
 
-.sm-list {
-  width: 100%;
-  background: #fff;
-  position: absolute;
-  height: 600px;
-  li {
-    text-align: left;
-    padding: 10px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    &:not(:first-child) {
-      border-top: 1px solid #aaa;
-      .arrow {
-        margin-left: 20%;
-      }
-      span {
-        width: 40%;
-        margin-left: 10%;
-      }
-    }
-    &:first-child {
-      margin-left: 10%;
-    }
-  }
-}
 .arrow {
   width: 12px;
   height: 12px;
-}
-
-.pos {
-  width: 18px;
-  height: 18px;
-}
-
-.arrow-left {
-  transform: rotate(180deg);
 }
 </style>
