@@ -6,9 +6,11 @@
         <img src="@img/logo.png" alt="" />
       </div>
       <div class="content">
-        <div v-for="(item, index) in menu" :key="index + item.id" @mouseenter="makeHover(item.id)" @mouseleave="mouseleave">
+        <div class="item" v-for="(item, index) in menu" :key="index + item.id" @mouseenter="makeHover(item.id)" @mouseleave="mouseleave">
           <a @click="chooseMenu(item.id)">{{ item.title }}</a>
-          <div class="sub-menu" v-show="mouseId == item.id"></div>
+          <div v-if="item.child" class="sub-menu" v-show="mouseId == item.id">
+            <menu-card :hasAds="item.hasAds" :menu="item.child"></menu-card>
+          </div>
         </div>
       </div>
       <div class="search-cont">
@@ -34,6 +36,8 @@
 </template>
 <script>
 const menu = require("@json/header.json");
+
+import menuCard from "./components/card.vue";
 export default {
   data() {
     return {
@@ -43,6 +47,7 @@ export default {
   },
   create() {},
   mounted() {},
+  components: { menuCard },
   methods: {
     chooseMenu(id) {
       console.log(id);
@@ -51,7 +56,7 @@ export default {
       this.mouseId = id;
     },
     mouseleave() {
-      this.mouseId = "";
+      // this.mouseId = "";
     }
   }
 };
@@ -120,12 +125,16 @@ export default {
         transition: all 0.2s ease-in-out 0s;
       }
     }
+    .item {
+      padding: 20px;
+    }
   }
   .sub-menu {
-    padding: 20px;
     background: #fff;
     border-radius: 5px;
     position: absolute;
+    overflow: hidden;
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
