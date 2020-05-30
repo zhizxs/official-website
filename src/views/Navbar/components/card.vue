@@ -42,6 +42,7 @@ export default {
   text-align: left;
   h3 {
     margin: 0;
+    font-size: 18px;
   }
   .ads {
     padding: 60px 20px;
@@ -53,8 +54,8 @@ export default {
       align-items: center;
       img {
         margin-left: 20px;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
       }
     }
   }
@@ -62,10 +63,12 @@ export default {
     display: flex;
     ul {
       padding: 25px 60px;
+    }
+    ul:not(:first-child) {
       border-left: 1px solid #ddd;
     }
     li {
-      min-width: 500px;
+      min-width: 200px;
       margin-top: 30px;
     }
     .title {

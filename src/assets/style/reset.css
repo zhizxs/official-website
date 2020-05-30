@@ -122,3 +122,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* html {
+  font-size: 10vw;
+}
+
+@media screen and (min-width: 1200) {
+  html {
+    font-size: 80px;
+  }
+} */
