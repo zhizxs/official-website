@@ -5,13 +5,13 @@
       <span>挑选门店</span>
     </div>
 
-    <div class="back" @click="back" v-show="currentIdArr.length">
+    <div class="back" @click="back" v-show="currentMenuIdx.length">
       <img class="arrow arrow-left" src="@img/arrow01.png" alt="" />
       <span>返回</span>
     </div>
     <p v-for="(items, index) in currentMenu" :key="index + items.id">
-      <i @click="changeItem(index)">{{ items.title }}</i>
-      <span v-if="items.child || items.type">
+      <i @click="chooseItem(index)">{{ items.title }}</i>
+      <span v-if="items.child || items.type" @click="changeItem(index)">
         <img class="arrow" src="@img/arrow01.png" alt="" />
       </span>
     </p>
@@ -25,7 +25,8 @@ export default {
     return {
       menu: menu,
       currentMenu: [],
-      currentIdArr: []
+      currentIdArr: [],
+      currentMenuIdx: []
     };
   },
   created() {},
@@ -38,13 +39,42 @@ export default {
       console.log("menu", this.currentMenu[index]);
       // 没有child且没有 type 直接跳走
       // 有child 遍历 则 child == currentMenu
-      this.currentIdArr.push(this.currentMenu[index].id); //  TODO 注意重复添加
+      this.currentMenuIdx.push(index); //  TODO 添加的序号
       if (this.currentMenu[index].child) {
         let arr = this.currentMenu[index].child.flat();
         this.currentMenu = arr;
       }
     },
-    back() {},
+    chooseItem(index) {
+      // 直接跳走
+      // this.currentMenu[index].id
+      // this.currentIdArr.push(); //  TODO 注意重复加
+    },
+    back() {
+      this.currentMenuIdx.pop();
+      if (!this.currentMenuIdx.length) {
+        this.currentMenu = this.menu;
+        return;
+      }
+      let arr = [];
+      for (let i = 0; i < this.currentMenuIdx.length; i++) {
+        arr = this.getArrByIdx(this.menu, this.currentMenuIdx[i]);
+      }
+
+      if (arr.child) {
+        let _arr = arr.child.flat();
+        this.currentMenu = _arr;
+      } else {
+        this.currentMenu = arr;
+      }
+    },
+    getArrByIdx(arr, idx) {
+      if (arr && idx) {
+        return arr[idx];
+      } else {
+        return arr || [];
+      }
+    },
     chooseShop() {}
   }
 };

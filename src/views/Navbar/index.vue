@@ -25,7 +25,7 @@
         <div class="center">
           <img class="logo" src="@img/logo.png" alt="" />
         </div>
-        <div class="right">
+        <div class="right" @click="changeSearch">
           <img class="search" src="@img/search.png" alt="" />
         </div>
       </div>
@@ -66,6 +66,9 @@ export default {
     },
     changeMenu() {
       this.$emit("changeMenu");
+    },
+    changeSearch() {
+      this.showSearch = !this.showSearch;
     }
   }
 };

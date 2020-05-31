@@ -1,62 +1,73 @@
 [
   {
-    "title": "为何选择为何选择",
+    "title": "为何选择为何",
     "id": "0"
   },
   {
-    "title": "产品介绍产品介绍产品介绍",
+    "title": "产品介绍产品",
     "id": "1",
     "hasAds": "1",
     "child": [
       [
         {
-          "title": "为何选择为何选择",
+          "title": "为何选择为何选",
           "id": "1",
-          "type": "head"
+          "type": "head",
+          "child": [
+            {
+              "title": "为何选择",
+              "id": "2"
+            }
+          ]
         },
-        {
-          "title": "为何选择",
-          "id": "2"
-        },
+
         {
           "title": "为何选择",
           "id": "3",
-          "type": "head"
-        },
-        {
-          "title": "为何选择",
-          "id": "4"
+          "type": "head",
+          "child": [
+            {
+              "title": "为何选择",
+              "id": "4"
+            }
+          ]
         },
         {
           "title": "为何选择",
           "id": "5",
-          "type": "head"
-        },
-        {
-          "title": "为何选择",
-          "id": "6"
+          "type": "head",
+          "child": [
+            {
+              "title": "为何选择",
+              "id": "6"
+            }
+          ]
         }
       ],
       [
         {
-          "title": "为何选择为何选择",
+          "title": "为何选择为何",
           "id": "1",
-          "type": "head"
-        },
-        {
-          "title": "为何选择",
-          "id": "2"
+          "type": "head",
+          "child": [
+            {
+              "title": "为何选择",
+              "id": "2"
+            }
+          ]
         }
       ],
       [
         {
           "title": "为何选择",
           "id": "1",
-          "type": "head"
-        },
-        {
-          "title": "为何选择",
-          "id": "2"
+          "type": "head",
+          "child": [
+            {
+              "title": "为何选择",
+              "id": "2"
+            }
+          ]
         }
       ]
     ]
@@ -83,41 +94,47 @@
         {
           "title": "解决方案解决方案",
           "id": "1",
-          "type": "head"
-        },
-        {
-          "title": "解决方案",
-          "id": "2"
-        },
-        {
-          "title": "解决方案",
-          "id": "3"
-        },
-        {
-          "title": "解决方案",
-          "id": "4"
+          "type": "head",
+          "child": [
+            {
+              "title": "解决方案",
+              "id": "2"
+            },
+            {
+              "title": "解决方案",
+              "id": "3"
+            },
+            {
+              "title": "解决方案",
+              "id": "4"
+            }
+          ]
         }
       ],
       [
         {
           "title": "解决方案解决方案",
           "id": "1",
-          "type": "head"
-        },
-        {
-          "title": "解决方案",
-          "id": "2"
+          "type": "head",
+          "child": [
+            {
+              "title": "解决方案",
+              "id": "2"
+            }
+          ]
         }
       ],
       [
         {
           "title": "解决方案",
           "id": "1",
-          "type": "head"
-        },
-        {
-          "title": "解决方案",
-          "id": "2"
+          "type": "head",
+          "child": [
+            {
+              "title": "解决方案",
+              "id": "2"
+            }
+          ]
         }
       ]
     ]

@@ -11,7 +11,12 @@
     <div class="menu-card">
       <template v-if="menu[0].length">
         <ul v-for="(items, index) in menu" :key="index + items.id">
-          <li :class="{ title: item.type }" v-for="(item, index) in items" :key="index + item.id">{{ item.title }}</li>
+          <li :class="{ title: item.type }" v-for="(item, index) in items" :key="index + item.id">
+            <span>{{ item.title }}</span>
+            <template v-if="item.child">
+              <p v-for="(v, i) in item.child" :key="i + v.id">{{ v.title }}</p>
+            </template>
+          </li>
         </ul>
       </template>
       <template v-else>
@@ -73,6 +78,9 @@ export default {
     }
     .title {
       font-weight: bold;
+      p {
+        font-weight: normal;
+      }
     }
   }
 }
