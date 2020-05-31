@@ -13,8 +13,12 @@
         <ul v-for="(items, index) in menu" :key="index + items.id">
           <li :class="{ title: item.type }" v-for="(item, index) in items" :key="index + item.id">
             <span>{{ item.title }}</span>
+            <span v-if="item.isNew" style="color: red;"> &nbsp;&nbsp;&nbsp;&nbsp;NEW!</span>
             <template v-if="item.child">
-              <p v-for="(v, i) in item.child" :key="i + v.id">{{ v.title }}</p>
+              <p v-for="(v, i) in item.child" :key="i + v.id">
+                {{ v.title }}
+                <span v-if="v.isNew" style="color: red;"> &nbsp;&nbsp;&nbsp;&nbsp;NEW!</span>
+              </p>
             </template>
           </li>
         </ul>

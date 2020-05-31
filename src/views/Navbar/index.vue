@@ -153,10 +153,10 @@ export default {
     }
   }
   .left1 {
-    left: -150%;
+    left: -260%;
   }
   .left3 {
-    left: -200%;
+    left: -310%;
   }
   .sub-menu {
     background: #fff;
