@@ -4,7 +4,7 @@
       <div class="drawer-content" slot="drawer">
         <mult-list></mult-list>
       </div>
-      <div slot="content">
+      <div class="page-container" slot="content">
         <Navbar @changeMenu="changeMenu" />
         <router-view></router-view>
         <Bottom />
@@ -43,5 +43,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.page-container {
+  height: 100%;
+  overflow-y: auto;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
 }
 </style>
