@@ -1,16 +1,20 @@
 <template>
   <div>
-    bottom
+    <tree-menu :list="list"></tree-menu>
   </div>
 </template>
 <script>
-import axios from "axios";
+const menu = require("@json/bottom");
+import treeMenu from "@components/treeMenu";
 export default {
+  components: {
+    treeMenu
+  },
   data() {
     return {
-      meals: []
+      list: menu
     };
   },
-  mounted() {}
+  methods: {}
 };
 </script>

@@ -162,17 +162,17 @@
   },
   {
     "title": "解决方案",
-    "id": "del1",
+    "id": "del",
     "child": [
       [
         {
           "title": "培训",
-          "id": "del2",
+          "id": "del1",
           "type": "head",
           "child": [
             {
               "title": "漆面保护膜培训",
-              "id": "del3"
+              "id": "del2"
             },
             {
               "title": "安全隔热膜培训",

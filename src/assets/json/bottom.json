@@ -1,0 +1,56 @@
+[
+  {
+    "title": "帮助",
+    "head": "1",
+    "id": "bz1",
+    "child": [
+      { "title": "电子质保查询", "id": "bz2" },
+      { "title": "保修信息", "id": "bz3" },
+      { "title": "常见问题", "id": "bz4" },
+      { "title": "膜面护理", "id": "bz5" },
+      { "title": "外星人店", "id": "bz6" },
+      { "title": "旗舰店", "id": "bz7" },
+      { "title": "授权店", "id": "bz8" },
+      { "title": "裁膜机技术支持", "id": "rj3" },
+      { "title": "报价系统", "id": "rj4" }
+    ]
+  },
+  {
+    "title": "公司新闻",
+    "id": "news",
+    "head": "1",
+    "child": [
+      { "title": "管理信息", "id": "news1" },
+      { "title": "招聘信息", "id": "news2" },
+      { "title": "新闻中心", "id": "news3" },
+      { "title": "公司活动", "id": "news4" }
+    ]
+  },
+  {
+    "title": "解决方案",
+    "head": "1",
+    "id": "del",
+    "child": [
+      { "title": "漆面保护膜培训", "id": "del1" },
+      { "title": "安全隔热膜培训", "id": "del2" },
+      { "title": "专业安装人员", "id": "del5" },
+      { "title": "新的经销商", "id": "del6" },
+      { "title": "全球汽车版型数据预处理系统（DAP）", "id": "rj2" },
+      { "title": "卡车&amp;车队", "id": "del8" },
+      { "title": "汽车制造商(OEM)", "id": "del9" },
+      { "title": "定制保护", "id": "del10" }
+    ]
+  },
+  {
+    "title": "专业施工套件",
+    "head": "1",
+    "id": "prd21",
+    "child": [
+      { "title": "安装液", "id": "prd22" },
+      { "title": "洗车液", "id": "prd23" },
+      { "title": "洗膜液", "id": "prd24" },
+      { "title": "封装液", "id": "prd25" },
+      { "title": "周边及工具", "id": "prd26" }
+    ]
+  }
+]

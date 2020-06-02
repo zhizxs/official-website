@@ -11,7 +11,7 @@
     </div>
     <p v-for="(items, index) in currentMenu" :key="index + items.id">
       <i @click="chooseItem(index)">{{ items.title }}</i>
-      <span v-if="items.child || items.type" @click="changeItem(index)">
+      <span v-if="items.child" @click="changeItem(index)">
         <img class="arrow" src="@img/arrow01.png" alt="" />
       </span>
     </p>

@@ -10,7 +10,7 @@
     </div>
     <div class="menu-card">
       <template v-if="menu[0].length">
-        <ul v-for="(items, index) in menu" :key="index + items.id">
+        <ul v-for="(items, index) in menu" :key="index">
           <li :class="{ title: item.type }" v-for="(item, index) in items" :key="index + item.id">
             <span>{{ item.title }}</span>
             <span v-if="item.isNew" style="color: red;"> &nbsp;&nbsp;&nbsp;&nbsp;NEW!</span>
