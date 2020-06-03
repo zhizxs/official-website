@@ -90,7 +90,7 @@
             ></strong
           >
         </p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190621/1561106771789307.jpg" title="1561106771789307.jpg" alt="体验店加盟细则.jpg" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190621/1561106771789307.jpg" title="1561106771789307.jpg" alt="体验店加盟细则.jpg" /></p>
         <p>
           <strong style='box-sizing: border-box; animation-fill-mode: both; color: rgb(40, 40, 40); font-family: "Microsoft Yahei", Arial, Verdana, sans-serif; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);'
             ><span style="box-sizing: border-box; animation-fill-mode: both; letter-spacing: 0pt;"
@@ -105,7 +105,7 @@
             ><span style="box-sizing: border-box; animation-fill-mode: both; letter-spacing: 0pt;"
               ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 18pt;"
                 ><span style="box-sizing: border-box; animation-fill-mode: both; color: rgb(248, 182, 45);"
-                  ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"><img src="https://www.xpel.com.cn/upload/image/20190621/1561106792295263.jpg" title="1561106792295263.jpg" alt="特约经销商.jpg"/></span></span></span></span
+                  ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190621/1561106792295263.jpg" title="1561106792295263.jpg" alt="特约经销商.jpg"/></span></span></span></span
           ></strong>
         </p>
         <p>
@@ -137,7 +137,7 @@
                       ><span style="box-sizing: border-box; animation-fill-mode: both; letter-spacing: 0pt;"
                         ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 18pt;"
                           ><span style="box-sizing: border-box; animation-fill-mode: both; color: rgb(248, 182, 45);"
-                            ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"><img src="https://www.xpel.com.cn/upload/image/20190621/1561106817532890.jpg" title="1561106817532890.jpg" alt="旗舰店加盟细则.jpg"/></span></span></span></span></strong></span></span></span></span
+                            ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190621/1561106817532890.jpg" title="1561106817532890.jpg" alt="旗舰店加盟细则.jpg"/></span></span></span></span></strong></span></span></span></span
           ></strong>
         </p>
         <p>
@@ -169,7 +169,7 @@
                       ><span style="box-sizing: border-box; animation-fill-mode: both; letter-spacing: 0pt;"
                         ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 18pt;"
                           ><span style="box-sizing: border-box; animation-fill-mode: both; color: rgb(248, 182, 45);"
-                            ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"><img src="https://www.xpel.com.cn/upload/image/20190709/1562642247979740.jpg" title="1562642247979740.jpg" alt="1.jpg"/></span></span></span></span></strong></span></span></span></span
+                            ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190709/1562642247979740.jpg" title="1562642247979740.jpg" alt="1.jpg"/></span></span></span></span></strong></span></span></span></span
           ></strong>
         </p>
         <p>
@@ -182,12 +182,12 @@
                       ><span style="box-sizing: border-box; animation-fill-mode: both; letter-spacing: 0pt;"
                         ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 18pt;"
                           ><span style="box-sizing: border-box; animation-fill-mode: both; color: rgb(248, 182, 45);"
-                            ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"><img src="https://www.xpel.com.cn/upload/image/20190721/1563692703842056.jpg" title="1563692703842056.jpg" alt="2.jpg"/></span></span></span></span></strong></span></span></span></span
+                            ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190721/1563692703842056.jpg" title="1563692703842056.jpg" alt="2.jpg"/></span></span></span></span></strong></span></span></span></span
           ></strong>
         </p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190709/1562642307322815.jpg" style="" title="1562642307322815.jpg" /></p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190709/1562642311367716.jpg" style="" title="1562642311367716.jpg" /></p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190709/1562642315630093.jpg" style="" title="1562642315630093.jpg" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190709/1562642307322815.jpg" title="1562642307322815.jpg" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190709/1562642311367716.jpg" title="1562642311367716.jpg" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190709/1562642315630093.jpg" title="1562642315630093.jpg" /></p>
         <p>
           <strong style='box-sizing: border-box; animation-fill-mode: both; color: rgb(40, 40, 40); font-family: "Microsoft Yahei", Arial, Verdana, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);'
             ><span style="box-sizing: border-box; animation-fill-mode: both; letter-spacing: 0pt;"
@@ -226,7 +226,7 @@
                             ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑;"
                               ><strong style='box-sizing: border-box; animation-fill-mode: both; color: rgb(248, 182, 45); font-family: "Microsoft Yahei", Arial, Verdana, sans-serif; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);'
                                 ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 24px;"
-                                  ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑体, tahoma, arial, sans-serif;"><img src="https://www.xpel.com.cn/upload/image/20190721/1563692793935432.jpg" title="1563692793935432.jpg" alt="4.jpg"/></span></span></strong></span></span></span></span></strong></span></span></span></span
+                                  ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑体, tahoma, arial, sans-serif;"><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190721/1563692793935432.jpg" title="1563692793935432.jpg" alt="4.jpg"/></span></span></strong></span></span></span></span></strong></span></span></span></span
           ></strong>
         </p>
         <p>
@@ -244,10 +244,10 @@
                                 ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 24px;"><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑体, tahoma, arial, sans-serif;"></span></span></strong></span></span></span></span></strong></span></span></span></span
           ></strong>
         </p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190721/1563692625440234.jpg" title="1563692625440234.jpg" alt="7.jpg" /></p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190628/1561707611124126.png" title="1561707611124126.png" alt="图片1.png" /></p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190621/1561106938194812.jpg" style="" title="1561106938194812.jpg" /></p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190721/1563692578775160.jpg" title="1563692578775160.jpg" alt="5.jpg" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190721/1563692625440234.jpg" title="1563692625440234.jpg" alt="7.jpg" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190628/1561707611124126.png" title="1561707611124126.png" alt="图片1.png" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190621/1561106938194812.jpg" style="" title="1561106938194812.jpg" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190721/1563692578775160.jpg" title="1563692578775160.jpg" alt="5.jpg" /></p>
         <p>
           <strong style='box-sizing: border-box; animation-fill-mode: both; color: rgb(248, 182, 45); font-family: "Microsoft Yahei", Arial, Verdana, sans-serif; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);'
             ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 24px;"><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑体, tahoma, arial, sans-serif;">XPEL授权店</span></span></strong
@@ -256,16 +256,16 @@
         <p>
           <strong style='box-sizing: border-box; animation-fill-mode: both; color: rgb(248, 182, 45); font-family: "Microsoft Yahei", Arial, Verdana, sans-serif; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);'
             ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 24px;"
-              ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑体, tahoma, arial, sans-serif;"><img src="https://www.xpel.com.cn/upload/image/20190721/1563692822845474.jpg" title="1563692822845474.jpg" alt="1.jpg"/></span></span
+              ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑体, tahoma, arial, sans-serif;"><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190721/1563692822845474.jpg" title="1563692822845474.jpg" alt="1.jpg"/></span></span
           ></strong>
         </p>
         <p>
           <strong style='box-sizing: border-box; animation-fill-mode: both; color: rgb(248, 182, 45); font-family: "Microsoft Yahei", Arial, Verdana, sans-serif; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);'
             ><span style="box-sizing: border-box; animation-fill-mode: both; font-size: 24px;"
-              ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑体, tahoma, arial, sans-serif;"><img src="https://www.xpel.com.cn/upload/image/20190721/1563692855154811.jpg" title="1563692855154811.jpg" alt="3.jpg"/></span></span
+              ><span style="box-sizing: border-box; animation-fill-mode: both; font-family: 微软雅黑体, tahoma, arial, sans-serif;"><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190721/1563692855154811.jpg" title="1563692855154811.jpg" alt="3.jpg"/></span></span
           ></strong>
         </p>
-        <p><img src="https://www.xpel.com.cn/upload/image/20190721/1563692652104756.jpg" title="1563692652104756.jpg" alt="6.jpg" /></p>
+        <p><img class="col-md-12" src="https://www.xpel.com.cn/upload/image/20190721/1563692652104756.jpg" title="1563692652104756.jpg" alt="6.jpg" /></p>
         <p>
           <strong style='color: rgb(40, 40, 40); font-family: "Microsoft Yahei", Arial, Verdana, sans-serif; font-size: 12px; box-sizing: border-box; animation-fill-mode: both;'><span style="box-sizing: border-box;animation-fill-mode: both;font-family: 微软雅黑;letter-spacing: 0;font-size: 16px">XPEL China&nbsp;</span></strong
           ><strong style='color: rgb(40, 40, 40); font-family: "Microsoft Yahei", Arial, Verdana, sans-serif; font-size: 12px; box-sizing: border-box; animation-fill-mode: both;'><span style="box-sizing: border-box;animation-fill-mode: both;font-family: 微软雅黑;letter-spacing: 0;font-size: 16px">.</span></strong>
@@ -342,5 +342,6 @@
   text-align: left;
   width: 90%;
   margin: 0 auto;
+  margin-top: 30px;
 }
 </style>

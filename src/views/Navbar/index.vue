@@ -118,7 +118,7 @@ export default {
 /************ 不能拿走 *****************/
 
 .big {
-  padding: 10px 20px;
+  padding: 0px 20px;
   justify-content: space-around;
 
   .content {
@@ -149,7 +149,7 @@ export default {
     }
     .item {
       position: relative;
-      padding: 10px;
+      padding: 30px 10px;
     }
   }
   .left1 {
@@ -163,7 +163,7 @@ export default {
     border-radius: 5px;
     position: absolute;
     z-index: 88;
-    top: 120%;
+    top: 100%;
     overflow: hidden;
     box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.1);
   }

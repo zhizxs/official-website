@@ -2,7 +2,7 @@
   <div :class="['list-content', !list.hasImg && !list.hasVideo ? 'bg-dark' : '']">
     <!-- 展示视频 -->
     <div class="video-content" v-if="list.hasVideo">
-      <div class="title title-dark">
+      <div v-if="list.title" class="title title-dark">
         {{ list.title }}
       </div>
       <div class="row big item-container ">
@@ -10,8 +10,8 @@
           <div class="item">
             <img src="@img/s-car.jpg" alt="" />
             <i class="fa fa-play-circle-o"></i>
-            <p>{{ item.title }}</p>
-            <p>{{ item.subTitle }}</p>
+            <p style="margin-top:30px;" :class="{ white: !list.title }">{{ item.title }}</p>
+            <p :class="{ 'spec-color': !list.title }">{{ item.subTitle }}</p>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
       </div>
-      <button>{{ list.button }}</button>
+      <button v-if="list.button">{{ list.button }}</button>
     </div>
 
     <!-- 展示图片 -->
@@ -199,5 +199,11 @@ export default {
     text-transform: uppercase;
     background: #f5af05;
   }
+}
+.white {
+  color: #fff !important;
+}
+.spec-color {
+  color: #f5af05 !important;
 }
 </style>
