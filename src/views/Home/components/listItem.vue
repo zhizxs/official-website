@@ -5,7 +5,7 @@
       <div class="title title-dark">
         {{ list.title }}
       </div>
-      <div class="row item-container ">
+      <div class="row big item-container ">
         <div class="col-md-4" v-for="(item, index) in list.child" :key="index + item.id">
           <div class="item">
             <img src="@img/s-car.jpg" alt="" />
@@ -14,6 +14,20 @@
             <p>{{ item.subTitle }}</p>
           </div>
         </div>
+      </div>
+
+      <div class="item-container sm">
+        <swiper :options="swiperOption" ref="mySwiper" v-if="swiperData.length">
+          <swiper-slide v-for="(item, index) in swiperData" :key="index + item.id">
+            <div class="item" @click="loadVideo(item.id)">
+              <img src="@img/s-car.jpg" alt="" />
+              <i class="fa fa-play-circle-o"></i>
+              <p>{{ item.title }}</p>
+              <p>{{ item.subTitle }}</p>
+            </div>
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
       </div>
       <button>{{ list.button }}</button>
     </div>
@@ -56,13 +70,32 @@
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/css/swiper.css";
 export default {
   props: ["list"],
   data() {
-    return {};
+    return {
+      swiperData: [],
+      swiperOption: {
+        autoplay: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      }
+    };
+  },
+  components: {
+    Swiper,
+    SwiperSlide
   },
   created() {},
-  mounted() {},
+  mounted() {
+    if (this.list.hasVideo) {
+      this.swiperData = this.list.child;
+    }
+  },
   methods: {}
 };
 </script>
@@ -98,6 +131,12 @@ export default {
     }
   }
   .video-content {
+    .sm {
+      display: none;
+      .item {
+        width: 100%;
+      }
+    }
     .item {
       width: 341px;
       text-align: left;
@@ -115,6 +154,16 @@ export default {
       }
     }
   }
+
+  @media screen and (max-width: 960px) {
+    .big {
+      display: none !important;
+    }
+    .sm {
+      display: block !important;
+    }
+  }
+
   .art-content {
     color: #ffffff;
     padding: 30px 0;

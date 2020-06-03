@@ -162,6 +162,7 @@ export default {
     background: #fff;
     border-radius: 5px;
     position: absolute;
+    z-index: 88;
     top: 120%;
     overflow: hidden;
     box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.1);

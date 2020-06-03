@@ -1,13 +1,23 @@
 <template>
-  <ul>
-    <li v-for="(item, index) in list" :key="index">
-      <p :class="{ needTop: item.head }">
-        <span @click="jumpUrl(item.id)">{{ item.title }}</span>
-        <i v-if="item.head" @click="changeStatus(index)"> + </i>
-      </p>
-      <tree-menus v-if="scopesDefault[index]" :list="item.child"></tree-menus>
-    </li>
-  </ul>
+  <div class="list-content">
+    <div class="big">
+      <div class="item" v-for="(item, index) in list" :key="index">
+        <p>{{ item.title }}</p>
+        <ul>
+          <li v-for="(v, i) in item.child" :key="i">{{ v.title }}</li>
+        </ul>
+      </div>
+    </div>
+    <ul class="sm">
+      <li v-for="(item, index) in list" :key="index">
+        <p :class="{ needTop: item.head && index }">
+          <span @click="jumpUrl(item.id)">{{ item.title }}</span>
+          <i v-if="item.head" @click="changeStatus(index)"> + </i>
+        </p>
+        <tree-menus v-if="scopesDefault[index]" :list="item.child"></tree-menus>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -49,6 +59,40 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@media screen and (max-width: 960px) {
+  .big {
+    display: none !important;
+  }
+  .sm {
+    display: block !important;
+  }
+}
+.list-content {
+  background: #000;
+}
+.sm {
+  display: none;
+}
+.big {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  .item {
+    text-align: left;
+    min-width: 18%;
+    p {
+      color: #fff;
+      border-bottom: 2px solid #f5af05;
+      margin-bottom: 15px;
+      padding: 12px 0;
+      width: 150px;
+    }
+  }
+  ul {
+    padding: 0;
+  }
+}
+
 ul {
   background: #000;
   color: #fff;
