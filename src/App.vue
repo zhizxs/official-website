@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <vue-drawer-layout ref="drawer" :z-index="0" :content-drawable="true" :backdrop-opacity-range="[0, 0.4]" @mask-click="handleMaskClick">
+    <router-view></router-view>
+
+    <!-- <vue-drawer-layout ref="drawer" :z-index="0" :content-drawable="true" :backdrop-opacity-range="[0, 0.4]" @mask-click="handleMaskClick">
       <div class="drawer-content" slot="drawer">
         <mult-list></mult-list>
       </div>
@@ -9,7 +11,7 @@
         <router-view></router-view>
         <Bottom />
       </div>
-    </vue-drawer-layout>
+    </vue-drawer-layout> -->
   </div>
 </template>
 <script>

@@ -5,6 +5,11 @@ let router = new Router({
   routes: [
     {
       path: "/",
+      name: "test",
+      component: () => import(/* webpackChunkName: "about" */ "../views/test")
+    },
+    {
+      path: "/xx",
       name: "home",
       component: () => import(/* webpackChunkName: "about" */ "../views/Home")
     },
