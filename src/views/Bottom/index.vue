@@ -58,6 +58,7 @@ export default {
   }
 }
 .big {
+  padding: 0px 150px;
   background: #f5af05;
 }
 

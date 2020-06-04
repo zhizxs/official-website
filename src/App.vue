@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-
-    <!-- <vue-drawer-layout ref="drawer" :z-index="0" :content-drawable="true" :backdrop-opacity-range="[0, 0.4]" @mask-click="handleMaskClick">
+    <!-- <router-view></router-view> -->
+    <vue-drawer-layout ref="drawer" :z-index="0" :content-drawable="true" :backdrop-opacity-range="[0, 0.4]" @mask-click="handleMaskClick">
       <div class="drawer-content" slot="drawer">
         <mult-list></mult-list>
       </div>
@@ -11,7 +10,7 @@
         <router-view></router-view>
         <Bottom />
       </div>
-    </vue-drawer-layout> -->
+    </vue-drawer-layout>
   </div>
 </template>
 <script>
@@ -55,5 +54,33 @@ export default {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
+}
+
+.title-background {
+  height: 425px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  background-size: cover !important;
+  margin: auto;
+  background-repeat: no-repeat !important;
+  background-position: center center;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-background {
+    height: 345px;
+  }
+}
+
+.mask {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    软件应用
+  <div class="soft">
+    <!-- 该页面借用 Product/index.vue -->
   </div>
 </template>
 <script>

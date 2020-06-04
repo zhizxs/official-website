@@ -36,7 +36,7 @@ let router = new Router({
     {
       path: "/soft",
       name: "soft",
-      component: () => import(/* webpackChunkName: "about" */ "../views/Soft")
+      component: () => import(/* webpackChunkName: "about" */ "../views/Product")
     },
     {
       path: "/about",

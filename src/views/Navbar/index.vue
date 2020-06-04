@@ -46,7 +46,8 @@ export default {
       menu: menu,
       currentMenu: [],
       mouseId: "",
-      showSearch: false
+      showSearch: false,
+      searchText: ""
     };
   },
   create() {},

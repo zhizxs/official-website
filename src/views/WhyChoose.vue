@@ -30,10 +30,21 @@
       <h2>专题报道</h2>
       <list-item :list="video"></list-item>
     </div>
+
+    <div class="kh text_margin">
+      <h1>客户赞许</h1>
+      <h3 class="highlight">听听我们的客户和经销商对XPEL的看法。</h3>
+      <h3 class="highlight">如果您有话要说？请通过info@XPEL.com.cn向我们提供反馈。</h3>
+      <div class="kh-img">
+        <circle-img></circle-img>
+        <circle-img></circle-img>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import circleImg from "@components/circleImg";
 import artAndImg from "@components/artAndImg";
 import listItem from "./Home/components/listItem.vue";
 export default {
@@ -70,22 +81,13 @@ export default {
       }
     };
   },
-  components: { artAndImg, listItem },
+  components: { artAndImg, listItem, circleImg },
   created() {},
   mounted() {},
   methods: {}
 };
 </script>
 <style lang="scss" scoped>
-.title-background {
-  height: 425px;
-}
-@media only screen and (min-width: 768px) {
-  .title-background {
-    height: 345px;
-  }
-}
-
 .why-info {
   margin-top: 60px;
 }
@@ -131,27 +133,6 @@ h1 {
   }
 }
 
-.title-background {
-  text-align: center;
-  width: 100%;
-  max-width: 100%;
-  background-size: cover !important;
-  margin: auto;
-  background-repeat: no-repeat !important;
-  background-position: center center;
-  position: relative;
-}
-
-.mask {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.35);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .why-content {
   text-align: left;
   width: 90%;
@@ -164,5 +145,19 @@ h1 {
   color: #fff;
   font-weight: 600;
   padding: 40px 0;
+}
+
+.text_margin {
+  margin: 90px 0 30px 0;
+  h1 {
+    margin: 0;
+  }
+}
+.kh-img {
+  margin-top: 30px;
+}
+
+.highlight {
+  color: #f5af05;
 }
 </style>
