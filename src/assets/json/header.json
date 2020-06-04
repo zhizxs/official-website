@@ -1,11 +1,11 @@
 [
   {
     "title": "为何选择XPEL",
-    "id": "xpel"
+    "id": "whyChoose"
   },
   {
     "title": "产品介绍",
-    "id": "prd",
+    "id": "product",
     "hasAds": "1",
     "child": [
       [
@@ -144,7 +144,7 @@
   },
   {
     "title": "软件应用",
-    "id": "rj1",
+    "id": "soft",
     "child": [
       {
         "title": "全球汽车版型数据预处理系统（DAP）",
@@ -162,7 +162,7 @@
   },
   {
     "title": "解决方案",
-    "id": "del",
+    "id": "dealFun",
     "child": [
       [
         {
@@ -223,7 +223,7 @@
   },
   {
     "title": "帮助",
-    "id": "bz1",
+    "id": "help",
     "child": [
       {
         "title": "电子质保查询",

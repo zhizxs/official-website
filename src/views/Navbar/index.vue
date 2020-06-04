@@ -32,8 +32,8 @@
     </div>
     <!-- 搜索 -->
     <div class="search-cont sm-search" v-show="showSearch">
-      <input type="text" placeholder="请输入你需要搜索的产品" />
-      <img class="search" src="@img/search-dark.png" alt="" />
+      <input type="text" v-model="searchText" placeholder="请输入你需要搜索的产品" />
+      <img class="search" @click="search" src="@img/search-dark.png" alt="" />
     </div>
   </div>
 </template>
@@ -56,7 +56,7 @@ export default {
   components: { menuCard },
   methods: {
     chooseMenu(id) {
-      console.log(id);
+      this.$router.push({ name: id });
     },
     makeHover(id) {
       this.mouseId = id;
@@ -69,6 +69,9 @@ export default {
     },
     changeSearch() {
       this.showSearch = !this.showSearch;
+    },
+    search() {
+      console.log(this.searchText);
     }
   }
 };
