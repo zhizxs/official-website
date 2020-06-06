@@ -65,6 +65,7 @@ export default {
 @media screen and (max-width: 960px) {
   .sm {
     background: #000;
+    padding: 0px 10px;
     i,
     .fa-arrow-right {
       color: #f5af05;

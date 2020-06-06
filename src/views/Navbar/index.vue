@@ -63,7 +63,7 @@ export default {
       this.mouseId = id;
     },
     mouseleave() {
-      this.mouseId = "";
+      // this.mouseId = "";
     },
     changeMenu() {
       this.$emit("changeMenu");
@@ -157,10 +157,10 @@ export default {
     }
   }
   .left1 {
-    left: -260%;
+    left: -265%;
   }
   .left3 {
-    left: -310%;
+    left: -315%;
   }
   .sub-menu {
     background: #fff;

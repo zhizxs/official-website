@@ -71,7 +71,7 @@ export default {
   .menu-card {
     display: flex;
     ul {
-      padding: 25px 60px;
+      padding: 10px 40px;
     }
     ul:not(:first-child) {
       border-left: 1px solid #ddd;
@@ -84,6 +84,8 @@ export default {
       font-weight: bold;
       p {
         font-weight: normal;
+        margin: 0.5rem 0;
+        width: max-content;
       }
     }
   }

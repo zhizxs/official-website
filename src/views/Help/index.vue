@@ -3,24 +3,39 @@
     <div class="row ">
       <div class="left-menu col-md-3">
         <ul>
-          <li v-for="item in menu" :key="item.id" :class="{ current: currentId == item.id }">{{ item.title }}</li>
+          <li v-for="(item, index) in menu" :key="item.id + index" :class="{ current: currentIdx == index }" @click="checkMenu(index)">{{ item.title }}</li>
         </ul>
       </div>
-      <div class="col-md-9 right-menu"></div>
+      <div class="col-md-2 right-menu"></div>
+      <div class="col-md-7 right-menu">
+        <show-des :info="currentMenu"></show-des>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+const menu = require("@json/help.json");
+import showDes from "@components/showDes";
 export default {
   data() {
     return {
-      menu: []
+      menu: menu,
+      currentMenu: [],
+      currentIdx: 0
     };
   },
+  components: { showDes },
   created() {},
-  mounted() {},
-  methods: {}
+  mounted() {
+    this.currentMenu = this.menu[0].des;
+  },
+  methods: {
+    checkMenu(idx) {
+      this.currentIdx = idx;
+      this.currentMenu = this.menu[idx].des;
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -61,6 +76,7 @@ export default {
 .help {
   text-align: left;
   .left-menu {
+    height: fit-content;
     font-size: 1rem;
     border-bottom: 2px solid #323232;
     background: #000;
